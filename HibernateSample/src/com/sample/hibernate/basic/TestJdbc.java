@@ -14,11 +14,11 @@ public class TestJdbc {
 		try {
 			System.out.println("Connecting to database: " + jdbcUrl);
 			
-			@SuppressWarnings("unused")
 			Connection myConn = DriverManager.getConnection(jdbcUrl, user, pass);
 			
 			System.out.println("Connection successful!!!");
 			
+			myConn.close();
 		}
 		catch (Exception exc) {
 			exc.printStackTrace();

@@ -54,7 +54,11 @@ public class Course {
 
 	@Override
 	public String toString() {
-		return "Course [id=" + id + ", title=" + title + ", instructor=" + instructor + "]";
+		String data = "Empty";
+		if (this != null) {
+			 data = "Course [id=" + id + ", title=" + title + ", instructor=" + instructor + "]";
+		}
+		return data;
 	}
 	
 	
